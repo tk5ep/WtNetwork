@@ -1,5 +1,6 @@
 # WtNetwork
-A Python script to interface CWskimmer, a DXcluster and Wintest
+A Python script to interface CWskimmer, a DXcluster and Wintest<br />
+07/02/2023 : Still in test.
 
 ## For what is is good for ?<br />
 The contest logging software Wintest package has a Telnet software that can connect to a DXcluster and send the received spots to Wintest.<br />
