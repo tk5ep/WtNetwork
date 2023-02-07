@@ -3,11 +3,11 @@ A Python script to interface CWskimmer, a DXcluster and Wintest
 
 ## For what is is good for ?<br />
 The contest logging software Wintest package has a Telnet software that can connect to a DXcluster and send the received spots to Wintest.<br />
-It makes its job, but I was in a need of some additionnal features, mainly with the CWskimmer interfac.<br />
-This script has been written to fit my needs.<br />
+It makes its job, but I was in a need of some additionnal features, mainly with the CWskimmer interface.<br />
+This script has been written to fit my needs :<br />
 - dual connection to a CWskimmer and a DXcluster<br />
 - spot filtering in removing FT4 & FT8 spots, it also removes the bell that some clusters are sending<br />
-- CAT control of the TS590 (probably many other HF Kenwood tranceivers)<br />
+- CAT control of the TS590 (probably many other HF Kenwood tranceivers too)<br />
 - clicking on the CWskimmer window sets VFO B<br /> 
 - when a band change occurs in Wintest or on the transceiver, CWskimmer is set to the mid CW band portion
 
@@ -80,4 +80,7 @@ This script reads some configuration from a configuration file : wtnetwork.cfg
         DXC_password =
         DXC_prompt = dxspider >
         DXC_login_prompt = login:
+        
+## FAQ
 
+## References & links
