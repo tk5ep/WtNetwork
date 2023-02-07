@@ -10,7 +10,8 @@ This script has been written to fit my needs :<br />
 - spot filtering in removing FT4 & FT8 spots, it also removes the bell that some clusters are sending<br />
 - CAT control of the TS590 (probably many other HF Kenwood tranceivers too)<br />
 - clicking on the CWskimmer window sets VFO B<br /> 
-- when a band change occurs in Wintest or on the transceiver, CWskimmer is set to the mid CW band portion
+- when a band change occurs in Wintest or on the transceiver, CWskimmer is set to the mid CW band portion.<br />
+- SH/DX only sent to the DXcluster, not to Skimmer.
 
 ## Requirements<br />
 This script uses standard Python librairies but needs a Kenwood CAT library I've written and that can be found on this Git.
