@@ -88,7 +88,7 @@ Some parameters need some explanations:
         
 CWSKIMMER can be following the band changes. There are 2 methods for doing this while the script is listening to the UDP broadcast :<br />
 - 1 : the STATUS broadcast is decoded and the band change is detected
-- 2 : Wintest can send some infos with the OnBandChange() event. This needs to add a Lua script in Wintest. An example is given here.
+- 2 : Wintest can send some infos with the OnBandChange() event. This needs to add a Lua script in Wintest. An example is given here int the Lua script repo.
 
         DXC_prompt = dxspider >
         DXC_login_prompt = login:
