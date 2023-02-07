@@ -26,7 +26,7 @@ This script reads some configuration from a configuration file : wtnetwork.cfg
         removebell = True
         # remove FT4 and FT8 spots
         removedigi = False
-        # do we want SKIMMER to track Wintest band changes 0=No, 1=using  2=using WT onbandchange()
+        # do we want SKIMMER to track Wintest band changes 0=No, 1=using Wintest STATUS broadcast,  2=using WT onbandchange() script
         skimmerfollowwt = 0
         # do we want Wintest to track Skimmer on band click
         wtfollowskimmer = True
@@ -81,6 +81,13 @@ This script reads some configuration from a configuration file : wtnetwork.cfg
         DXC_prompt = dxspider >
         DXC_login_prompt = login:
         
+Some parameters need some explanations:
+        # do we want SKIMMER to track Wintest band changes 0=No, 1=using Wintest STATUS broadcast,  2=using WT onbandchange() script
+        skimmerfollowwt = 0
+CWSKIMMER can be following the band changes. There are 2 methods for doing this while the script is listening to the UDP broadcast :<br />
+- 1 : the STATUS broadcast is decoded and the band change is detected
+- 2 : Wintest can send some infos with the OnBandChange() event. This needs to add a Lua script in Wintest. An example is given here.
+
 ## FAQ
 
 ## References & links
