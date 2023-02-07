@@ -97,6 +97,16 @@ Each DXcluster can have different login prompts and the script must be adapted.<
 *DXC_login_prompt = login:*     this is the prompt sent by the DXcluster before waiting your callsign.<br />
 *DXC_prompt = dxspider >*       this is the prompt sent by the DXcluster once completely connected.
 
+        [udp]
+        UDP_IP = 127.255.255.255
+        UDP_PORT = 9871
+        UDP_user = SNIFFER
+        UDPbind_IP = 127.0.0.1
+        UDPbind_PORT = 9871
+        
+These settings are for a single computer. IP adresses must be adapted in case of a network of stations, and the same as in Wintest.<br />
+*UDP_user* is a name given for the script to receive dedicaced messages. Must be adapted to be the same in the Lua script.<br />
+
 ## FAQ
 
 ## References & links
