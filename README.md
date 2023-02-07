@@ -82,11 +82,20 @@ This script reads some configuration from a configuration file : wtnetwork.cfg
         DXC_login_prompt = login:
         
 Some parameters need some explanations:
+
         # do we want SKIMMER to track Wintest band changes 0=No, 1=using Wintest STATUS broadcast,  2=using WT onbandchange() script
         skimmerfollowwt = 0
+        
 CWSKIMMER can be following the band changes. There are 2 methods for doing this while the script is listening to the UDP broadcast :<br />
 - 1 : the STATUS broadcast is decoded and the band change is detected
 - 2 : Wintest can send some infos with the OnBandChange() event. This needs to add a Lua script in Wintest. An example is given here.
+
+        DXC_prompt = dxspider >
+        DXC_login_prompt = login:
+    
+Each DXcluster can have different login prompts and the script must be adapted.<br />
+*DXC_login_prompt = login:*     this is the prompt sent by the DXcluster before waiting your callsign.<br />
+*DXC_prompt = dxspider >*       this is the prompt sent by the DXcluster once completely connected.
 
 ## FAQ
 
